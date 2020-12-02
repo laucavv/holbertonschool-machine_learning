@@ -12,5 +12,5 @@ def add_matrices2D(mat1, mat2):
                 sum.append(mat1[i][j] + mat2[i][j])
             sum_matirx.append(sum)
         return sum_matirx
-
-    return None
+    else:
+        return None
