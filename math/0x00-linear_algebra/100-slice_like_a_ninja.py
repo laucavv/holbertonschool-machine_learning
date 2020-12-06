@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-""" slices a matrix along specific axes """
+"""
+Slices a matrix along a specific axes
+"""
 
 
 def np_slice(matrix, axes={}):
-    """ slices a matrix along specific axes """
-    mat_new = [slice(None)] * len(matrix.shape)
+    """Slices a matrix along a specific axes"""
+    new_mat = [slice(None)] * len(matrix.shape)
     for key, value in axes.items():
-        mat_new[key] = slice(*value)
-    return marix[tuple(mat_new)]
+        new_mat[key] = slice(*value)
+    return matrix[tuple(new_mat)]
