@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+""" add two matrices
+"""
 
 
 def matrix_shape(matrix):
