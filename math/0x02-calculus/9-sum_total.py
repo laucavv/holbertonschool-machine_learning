@@ -4,7 +4,7 @@
 
 def summation_i_squared(n):
     """ calculates sum{i=1}^n i^2 """
-    if type(n) is int:
+    if type(n) is int and n > 0:
         sum = (n * (n + 1) * (2 * n + 1)) // 6
         return (sum)
     else:
