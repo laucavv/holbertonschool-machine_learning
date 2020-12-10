@@ -8,6 +8,9 @@ def poly_integral(poly, C=0):
 
     if type(poly) is list and len(poly) > 0 and isinstance(C, (int, float)):
 
+        if poly == [0]:
+            return [C]
+
         derivative = [0 for a in range(len(poly) + 1)]
         derivative[0] = C
 
